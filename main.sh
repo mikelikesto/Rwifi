@@ -1,9 +1,9 @@
-result=$(ping Notawebmorelikesite.com)
-result2=$(cat Rwifi.txt)
+#!/bin/bash
 
-if [ $result == $result2 ]; then
-        echo this will reboot
-  else
-        echo Not
+wget -q --spider http://google.com
 
+if [ $? -eq 0 ]; then
+    echo "Online"
+else
+    reboot
 fi
