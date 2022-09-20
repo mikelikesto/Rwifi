@@ -1,0 +1,6 @@
+[Service]
+ExecStart=/bin/rwifi.sh
+
+
+[Install]
+WantedBy=multi-user.target
